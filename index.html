@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="Sify_replace.js"></script>
+		<script src="dictionary.js"></script>
+		<script type="text/javascript" src="UserDictionary.js"></script> 
+		<script>refreshDict();refreshUserDict();</script>
+		<link rel="stylesheet" type="text/css" href="sify.css">
+  </head>
+  <body>
+    <p>Sql-ify</p>
+    <textarea id="new" name="new" contenteditable="true"> </textarea> <br>
+    <input type="button" value="Sify!" onclick="Sify_Redraw()" /> 
+    <br><br>
+    <input type="button" value="Save Sify" onclick="SaveSify();" />
+    <input type="button" value="Load Sify" onclick="LoadSify();" />
+  <br><br>  
+<pre><code class="sql" id="thecode" contenteditable="true"></code></pre>
+
+<br><br><div 
+   id="example1div">
+ Click Sify or press Space to update! <br> For easy copying to clipbord press Esc -> Ctrl-C -> Enter
+</div>  
+  </body>
+</html>
